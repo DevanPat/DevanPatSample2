@@ -101,6 +101,13 @@ body {
         background-color: darkgreen;    
     }
 }
+
+@media screen and (max-width:600px) {
+    #Slideshow_Background {
+        height: auto;
+        width:100%;    
+    }
+}
 .Row:after { /* will insert something after the content of the selected elements */
     content: ""; /* By keeping this blank, we are letting the footer (covered lower down) be displayed - removing it makes the footer overwrite a column */
     display: table; /* display property specifies the type of display behavior; the table value tells the browser treat the element as a table */
