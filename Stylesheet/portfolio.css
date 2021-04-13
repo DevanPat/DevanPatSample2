@@ -79,6 +79,29 @@ body {
 
 
 
+/* Video */
+#Typing_Video {
+    position: fixed; /* fixes the video to page  */
+   object-fit: cover; /* makes sure there is no space between the edges of the video and the edge of the page */
+    height: 100vh;
+    width: 100vw; /* makes sure there is no space between the edges of the video and the edge of the page */
+    left: 0; /* makes sure the video is displayed across the complete height of the page */
+    top: 0;
+    z-index: -1;
+}
+
+/* Text over the video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5); /*  provides a semi-transparent background for text to sit over */
+    color: green;
+    width: 100%;
+    padding-top: .1vh; /* adds padding around text so that the background goes just a little beyond the text */
+    padding-bottom: 1vh;
+    position: relative;
+    -webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
+    animation: movevideoText 4s;
+}
+
 /* Slideshow text */
 .text {
     color: green;
@@ -114,14 +137,32 @@ body {
 }
 
 .Column_1 {
- 
+    float: left;
+    width: 50%; /* makes sure one column takes up half the page width */
+    padding: 1.6%;
+    background-color: darkgreen;
     height: auto; /* You might need to adjust this to fit your content */
 }
 
-.col-md-4 {
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 1.6%;
+    height: auto; /* You may need to adjust this to fit your content */
     background-color: black;
 }
 
+@media screen and (max-width:600px) {
+    .Column_1, .Column_2 {
+        width:100%;
+    }
+}
+
+.Row:after { /* will insert something after the content of the selected elements */
+    content: ""; /* By keeping this blank, we are letting the footer (covered lower down) be displayed - removing it makes the footer overwrite a column */
+    display: table; /* display property specifies the type of display behavior; the table value tells the browser treat the element as a table */
+    clear: both; /* clears any other elements from floating on the left or right of element */
+}
 
 /* Heading 1 elements */
 h1 {
