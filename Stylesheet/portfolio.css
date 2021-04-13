@@ -107,7 +107,7 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    .Column_1, .Column_2 {
+    .Column_1, .Column_2, .Column_3, .Column_4 {
         width:100%;    
     }
 }
