@@ -103,11 +103,10 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    #Slideshow_Background {
+    .img {
         height: 300px;
         width:500px; 
         object-fit: cover;   
-        object-position: bottom;
     }
 }
 .Row:after { /* will insert something after the content of the selected elements */
