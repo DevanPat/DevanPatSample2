@@ -137,18 +137,11 @@ body {
 }
 
 .Column_1 {
-    float: left;
-    width: 50%; /* makes sure one column takes up half the page width */
-
-    background-color: darkgreen;
+ 
     height: auto; /* You might need to adjust this to fit your content */
 }
 
-.Column_2 {
-    float: left;
-
-    padding: 1.6%;
-    height: auto; /* You may need to adjust this to fit your content */
+.col-md-4 {
     background-color: black;
 }
 
