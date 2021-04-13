@@ -92,7 +92,14 @@ body {
 
 @media screen and (max-width:600px) {
     .Column_1, .Column_2 {
-        width:100%;
+        width:100%;    
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Column_1 {
+        width:100%;    
+        background-color: darkgreen;
     }
 }
 
