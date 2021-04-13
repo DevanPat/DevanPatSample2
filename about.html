@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devan Raj</title>
+  <link rel="stylesheet" type=text/css href="./Stylesheet/portfolio.css">
+  <script src="./JS/portfolio.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<!-- Body -->
+<body class="Background">
+  <!-- Fade in effect --><!--  script and function controls fade in effect -->
+  <script>
+
+        document.body.className += ' fade-out';
+        $(function () {
+          $('body').removeClass('fade-out');
+        }
+        );
+
+  </script>
+
+  <!-- Navbar -->
+  <div class="Navbar">
+    <a class="active" href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./contact.html">Contact</a> <!-- makes it so that openForm function runs when we click Contact on nav bar -->
+  </div>
+
+    <!-- Home -->
+    <div id="Home">
+      <br> <!-- Breaks to add space between navbar and heading -->
+      <br>
+
+      <!-- Video -->
+      <video autoplay muted loop id="Typing_Video">
+        <!-- Makes video play automatically, on loop and with no sound -->
+        <source src="./Stylesheet/img/Typing.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. <!-- Displays the message if the video fails to run -->
+      </video>
+    </div>
+
+   
+    <!-- Slideshow section -->
+          <div id="Slideshow_Background">
+            <img class="Slide_Show_Images" src="./Stylesheet/img/htmlcssjs.png" style="height:500px; width: 50%" alt="htmlcssimg">
+            <img class="Slide_Show_Images" src="./Stylesheet/img/c-sharp.jpg" style="height:500px; width:50%" alt="c#">
+            <img class="Slide_Show_Images" src="./Stylesheet/img/sql.png" style="height:500px; width: 50%" alt="sqlImg">
+            <img class="Slide_Show_Images" src="./Stylesheet/img/Coding_1.jpg" style="height:500px; width: 50%" alt="CodePicImg">
+          </div>
+        </div>
+        <br>
+
+        
+
+
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- About section -->
+    <div class="Row">
+      <div class="Column_2">
+        <!-- Left column -->
+        <img src="./Stylesheet/img/development.png" alt="code">
+      </div>
+
+      <div class="Column_1">
+        <!-- Right column -->
+       
+          <center><h1>About Me</h1>
+          <center><p>I am a full stack software developer.<br> When I am not coding or working on projects some of my hobbies are hanging out with friends & family, going to meetups, playing guitar, and exercising.<br>I am trained and experienced in the following computer programming languages: HTML, CSS, JavaScript, SQL & C#. Please take a look at my <a href="https://docs.google.com/document/d/192r3P4r0PnTC3VBSgtzGQ6-9UiKG9FP_y-S3tK1_Q98/edit?usp=sharing" target="_blank">Resume</a> and <a href="https://www.linkedin.com/in/devan-pat-raj/" target="_blank">LinkedIn</a> for more information! <br><br> <a href="./contact.html">Contact Me</a></p></center>
+      </div>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="Row" id="GitHub">
+      <div class="Column_1 col-sm-4">
+        <!-- Left column -->
+        <h1>GitHub</h1>
+        <p>
+          You can view my coding projects on my github here: <br>
+          <center><a href="https://github.com/DevanPat/HTML-CSS-Repository/tree/master/html%20css%20final" target="_blank">original portfolio website</a></center>
+          <center><a href="https://github.com/DevanPat/HTML-CSS-Repository/blob/master/Space%20Station%20Project/index.html" target="_blank">Space themed website</a></center>
+          <center><a href="https://github.com/DevanPat/HTML-CSS-Repository/tree/master/bootstrap4.1_project" target="_blank">Movie themed website using bootstrap framework</a></center>
+          <center><a href="https://github.com/DevanPat/JavaScriptRepository/tree/master/Pizza%20Project" target="_blank">JavaScript Pizza Ordering App</a></center>
+          <center><a href="https://github.com/DevanPat/JavaScriptRepository/tree/master/Calculator%20folder" target="_blank">JavaScript Calculator App</a></center>
+          <center><a href="https://github.com/DevanPat/JavaScriptRepository/tree/master/tictactoefolder" target="_blank">JavaScript Tic Tac Toe Game</a></center>
+          <center><a href="https://github.com/DevanPat/.NET/blob/master/NewsLetterAppMVC/NewsLetterAppMVC/Controllers/HomeController.cs" target="_blank">C# MVC Newsletter App</a></center>
+          <center><a href="https://github.com/DevanPat/.NET/blob/master/TwentyOneGame/TwentyOne123/Program.cs" target="_blank">C# Twenty-One Game App</a></center>
+        </p>
+      </div>
+
+      <div class="Column_2">
+        <!-- Right column -->
+        <a href="https://github.com/DevanPat" target="_blank"><img src="./Stylesheet/img/GitHub.png" alt="github"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<footer>
+  <center><div class="footer-section">Created by: Devan Raj</div></center>    
+</footer>
+
+
+<script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slide_Show_Images");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+   slideIndex++
+   if (slideIndex > x.length) {slideIndex = 1}
+   x[slideIndex-1].style.display = "block";
+   setTimeout(carousel, 3500); // Changes images every 3.5 seconds
+  }
+</script>
+</body>
+</html>
