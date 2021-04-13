@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Devan Raj</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" type=text/css href="./Stylesheet/portfolio.css">
   <script src="./JS/portfolio.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -36,7 +35,16 @@
     <div id="Home">
       <br> <!-- Breaks to add space between navbar and heading -->
       <br>
- 
+
+      <!-- Video -->
+      <video autoplay muted loop id="Typing_Video">
+        <!-- Makes video play automatically, on loop and with no sound -->
+        <source src="./Stylesheet/img/Typing.mp4" type="video/mp4">
+        Your browser does not support HTML5 video. <!-- Displays the message if the video fails to run -->
+      </video>
+    </div>
+
+   
     <!-- Slideshow section -->
           <div id="Slideshow_Background">
             <img class="Slide_Show_Images" src="./Stylesheet/img/htmlcssjs.png" style="height:500px; width: 50%" alt="htmlcssimg">
@@ -57,18 +65,24 @@
     
 
     <!-- About section -->
-    <div class="container-fluid">
     <div class="Row">
-      <div class="col-md-4">
-        <img src="./Stylesheet/img/development.png" style="width: 100%; height: auto" alt="code">
+      <div class="Column_2">
+        <!-- Left column -->
+        <img src="./Stylesheet/img/development.png" alt="code">
       </div>
-      <div class="col-md-4">    
+
+      <div class="Column_1">
+        <!-- Right column -->
+       
           <center><h1>About Me</h1>
           <center><p>I am a full stack software developer.<br> When I am not coding or working on projects some of my hobbies are hanging out with friends & family, going to meetups, playing guitar, and exercising.<br>I am trained and experienced in the following computer programming languages: HTML, CSS, JavaScript, SQL & C#. Please take a look at my <a href="https://docs.google.com/document/d/192r3P4r0PnTC3VBSgtzGQ6-9UiKG9FP_y-S3tK1_Q98/edit?usp=sharing" target="_blank">Resume</a> and <a href="https://www.linkedin.com/in/devan-pat-raj/" target="_blank">LinkedIn</a> for more information! <br><br> <a href="./contact.html">Contact Me</a></p></center>
       </div>
     </div>
+
+    <!-- GitHub section -->
     <div class="Row" id="GitHub">
-      <div class="col-md-4" style="width: 100%;">
+      <div class="Column_1 col-sm-4">
+        <!-- Left column -->
         <h1>GitHub</h1>
         <p>
           You can view my coding projects on my github here: <br>
@@ -82,13 +96,13 @@
           <center><a href="https://github.com/DevanPat/.NET/blob/master/TwentyOneGame/TwentyOne123/Program.cs" target="_blank">C# Twenty-One Game App</a></center>
         </p>
       </div>
-      <div class="col-sm-4">
+
+      <div class="Column_2">
         <!-- Right column -->
         <a href="https://github.com/DevanPat" target="_blank"><img src="./Stylesheet/img/GitHub.png" alt="github"></a>
       </div>
     </div>
   </div>
-</div>
 
 
 
@@ -113,7 +127,5 @@
    setTimeout(carousel, 3500); // Changes images every 3.5 seconds
   }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
 </html>
