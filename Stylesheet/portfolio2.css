@@ -162,17 +162,17 @@ body {
 
 .Column_1 {
     float: left;
-    width: 50%; /* makes sure one column takes up half the page width */
+    width: 100%; /* makes sure one column takes up half the page width */
     padding: 1.6%;
     background-color: green;
-    height: 448px; /* You might need to adjust this to fit your content */
+    height: auto; /* You might need to adjust this to fit your content */
 }
 
 .Column_2 {
     float: left;
-    width: 50%;
+    width: 100%;
     padding: 1.6%;
-    height: 448px; /* You may need to adjust this to fit your content */
+    height: auto; /* You may need to adjust this to fit your content */
     background-color: black;
 }
 
