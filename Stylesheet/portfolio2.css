@@ -165,14 +165,14 @@ body {
     width: 100%; /* makes sure one column takes up half the page width */
     padding: 1.6%;
     background-color: green;
-    height: auto; /* You might need to adjust this to fit your content */
+    max-height: 100%; /* You might need to adjust this to fit your content */
 }
 
 .Column_2 {
     float: left;
     width: 100%;
     padding: 1.6%;
-    height: auto; /* You may need to adjust this to fit your content */
+    max-height: 100%; /* You may need to adjust this to fit your content */
     background-color: black;
 }
 
