@@ -88,6 +88,7 @@ body {
     padding: 1.6%;
     height: auto; /* You may need to adjust this to fit your content */
     background-color: black;
+    bottom: 0;
 }
 
 .Column_3 {
@@ -104,6 +105,7 @@ body {
     padding: 1.6%;
     height: auto; /* You may need to adjust this to fit your content */
     background-color: black;
+    bottom: 0;
 }
 
 @media screen and (max-width:600px) {
