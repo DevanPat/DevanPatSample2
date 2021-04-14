@@ -75,37 +75,28 @@ body {
 }
 
 .Column_1 {
-    float: right;
-    width: 50%; /* makes sure one column takes up half the page width */
-    padding: 1.6%;
+ 
     background-color: darkgreen;
-    height: auto; /* You might need to adjust this to fit your content */
 }
-
 .Column_2 {
-    float: left;
+    /* float: left;
     width: 50%;
     padding: 1.6%;
-    height: auto; /* You may need to adjust this to fit your content */
+    height: auto; You may need to adjust this to fit your content */
     background-color: black;
-    bottom: 0;
 }
 
 .Column_3 {
-    float: left;
+    /* float: left;
     width: 50%;
     padding: 1.6%;
-    height: auto; /* You may need to adjust this to fit your content */
+    height: auto; You may need to adjust this to fit your content */
     background-color: darkgreen;
 }
 
 .Column_4 {
-    float: right;
-    width: 50%;
-    padding: 1.6%;
-    height: auto; /* You may need to adjust this to fit your content */
+  
     background-color: black;
-    bottom: 0;
 }
 
 @media screen and (max-width:600px) {
@@ -126,12 +117,6 @@ body {
         width: 100%; 
         object-fit: cover;   
     }
-}
-.Row:after { /* will insert something after the content of the selected elements */
-    content: ""; /* By keeping this blank, we are letting the footer (covered lower down) be displayed - removing it makes the footer overwrite a column */
-    display: table; /* display property specifies the type of display behavior; the table value tells the browser treat the element as a table */
-    clear: both; /* clears any other elements from floating on the left or right of element */
-}
 
 /* Heading 1 elements */
 h1 {
@@ -320,6 +305,6 @@ footer {
     color: green;
     background-color: black;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    bottom: 0;
+    position: fixed;
 }
